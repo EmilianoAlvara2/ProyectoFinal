@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/mercado.png">
+    <title>LocaLifeExperiences</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">LocalLife<span class="logo__bold">Experiences</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Blog</a>
+                    <a href="cursos.html" class="navegacion__enlace">Experiencias</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin">LocaLifeExperiences</h2>
+            <p class="no-margin">"¿Tienes preguntas o necesitas más información? Estamos aquí para ayudarte. Ya sea que quieras saber más sobre nuestras experiencias internacionales, necesites asistencia para reservar, o simplemente desees compartir tus comentarios, no dudes en ponerte en contacto con nosotros. ¡Estamos a tu disposición para hacer de tu viaje una experiencia inolvidable!"</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+        <div class="contacto-bg"></div>
+        <form class="formulario" action="php/datos.php" method="POST">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input class="campo__field" type="email" placeholder="Tu E-mail" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="telefono">Teléfono</label>
+                <input class="campo__field" type="tel" placeholder="Tu Teléfono" id="telefono" name="telefono">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="tema">Tema</label>
+                <select class="campo__field" id="tema" name="tema" required>
+                    <option value="">Seleccione un tema</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="comentarios">Comentarios</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+        </form>
+
+    </main>
+    <div class="contenedor centrar-texto">
+        <img src="img/qr.jpg" alt="Descripción de la foto">
+    </div>
+    
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">LocalLife<span class="logo__bold">Experiences</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Blog</a>
+                    <a href="cursos.html" class="navegacion__enlace">Experiencias</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+                <!-- Redes Sociales -->
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/viajesjuarezmx" class="redes-sociales__enlace"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/viajes.juarez.mx/" class="redes-sociales__enlace"><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/@IsraelViajero" class="redes-sociales__enlace"><img src="img/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
